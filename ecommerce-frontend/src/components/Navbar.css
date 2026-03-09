@@ -1,0 +1,120 @@
+/* ================================
+   NAVBAR CONTAINER
+================================ */
+.navbar {
+  width: 95%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================================
+   LEFT SIDE (LOGO)
+================================ */
+.logo {
+  font-size: 1.8rem;
+  margin-right: 150px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #4e73df;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  color: #2e59d9;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   RIGHT SIDE LINKS
+================================ */
+.navbar-right {
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.25s ease;
+  position: relative;
+}
+
+/* Hover underline animation */
+.navbar-right a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #4e73df;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-right a:hover::after {
+  width: 100%;
+}
+
+.navbar-right a:hover {
+  color: #4e73df;
+}
+
+/* ================================
+   WELCOME TEXT
+================================ */
+.welcome-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-right: 10px;
+}
+
+/* ================================
+   LOGOUT BUTTON
+================================ */
+.logout-btn {
+  background: #ff4b5c;
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 75, 92, 0.3);
+}
+
+.logout-btn:hover {
+  background: #e63e4f;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   RESPONSIVE NAVBAR
+================================ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,100 @@
+.order-success-wrapper {
+  min-height: calc(100vh - 70px); /* below navbar */
+  display: flex;
+  margin-left: 450px;
+  align-items: center;
+  justify-content: center;
+  /* background: #f8f9fb; */
+  padding: 20px;
+}
+
+.order-success-card {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInScale 0.6s ease-in-out;
+}
+
+.success-icon {
+  font-size: 64px;
+  color: #28a745;
+  margin-bottom: 20px;
+  animation: pop 0.5s ease-out;
+}
+
+.order-success-card h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.order-success-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.success-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.success-buttons button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-orders-btn {
+  background: #0d6efd;
+  color: white;
+}
+
+.view-orders-btn:hover {
+  background: #084298;
+}
+
+.continue-btn {
+  background: #e9ecef;
+  color: #333;
+}
+
+.continue-btn:hover {
+  background: #d6d8db;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

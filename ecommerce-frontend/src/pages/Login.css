@@ -1,0 +1,77 @@
+/* Center the login card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 440px;
+  margin-top: 20px;
+  height: 100vh;
+  /* background: #f8f9fc; */
+}
+
+/* Card */
+.login-card {
+  width: 440px;
+  height: 400px;                       /* ⬅ Fix width for all inputs + button */
+  background: white;
+  padding: 35px;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;                        /* ⬅ full width inside card */
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;                        /* ⬅ SAME WIDTH AS INPUTS */
+  padding: 12px;
+  margin-top: 10px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #0051cc;
+}
+
+.signup-text {
+  margin-top: 18px;
+}
+
+.link {
+  color: #0066ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

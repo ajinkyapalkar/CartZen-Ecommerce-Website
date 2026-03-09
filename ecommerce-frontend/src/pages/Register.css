@@ -1,0 +1,87 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+.register-card {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.register-subtitle {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #1e7e34;
+}
+
+.register-message {
+  font-size: 14px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

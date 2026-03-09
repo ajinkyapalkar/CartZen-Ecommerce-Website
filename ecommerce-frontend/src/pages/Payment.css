@@ -1,0 +1,132 @@
+/* Page container: center the card */
+.payment-container {
+    margin-top: 50px;
+    margin-left: 400px;
+  min-height: 100vh;
+  /* background: #f4f6f8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card wrapper */
+.payment-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center; /* Center heading and total */
+}
+
+/* Headings */
+.payment-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.payment-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.payment-card h1 {
+  font-size: 32px;
+  margin: 0 0 25px 0;
+  color: #0f172a;
+}
+
+/* Payment method block */
+.method {
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: left; /* Keep inputs left-aligned */
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.method:hover {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Radio button */
+.method input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #2563eb;
+}
+
+/* Card input fields */
+.method input[type="text"],
+.method input[placeholder] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.method input::placeholder {
+  color: #9ca3af;
+}
+
+.method input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* MM/YY and CVV row */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+/* Pay button */
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pay-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.pay-btn:active {
+  transform: scale(0.98);
+}
+
+/* QR placeholder */
+/* .upi-qr {
+  height: 120px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    #e5e7eb,
+    #e5e7eb 10px,
+    #f9fafb 10px,
+    #f9fafb 20px
+  );
+} */

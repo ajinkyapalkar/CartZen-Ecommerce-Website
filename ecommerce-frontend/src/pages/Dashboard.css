@@ -1,0 +1,102 @@
+/* 🌈 Page background */
+.dashboard-container {
+  min-height: 100vh;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, #f5f7fa, #e6ecf3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🔥 HERO SECTION */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1607082352121-fa243f3dde32");
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  padding: 80px 60px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+/* Hero text */
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* 🛒 SHOP BUTTON */
+.shop-btn {
+  margin-top: 30px;
+  padding: 14px 34px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff9900, #ff7a00);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255, 153, 0, 0.4);
+}
+
+.shop-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(255, 153, 0, 0.6);
+}
+
+/* 🖼 PROMO GRID */
+.promo-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 45px;
+}
+
+/* 📦 IMAGE CARDS */
+.promo-section img {
+  width: 100%;
+  height: 280px;
+  object-fit:contain;
+  border-radius: 18px;
+  background: white;
+  padding: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* ✨ Hover animation */
+.promo-section img:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 25px;
+  }
+
+  .hero {
+    padding: 50px 30px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}

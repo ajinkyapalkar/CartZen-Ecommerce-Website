@@ -1,0 +1,123 @@
+/* Page container */
+.orders-page {
+  padding: 40px 60px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* Page title */
+.orders-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* GRID LAYOUT */
+.orders-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Order card */
+.order-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.order-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Order ID */
+.order-header span strong {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Status badge */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Status colors */
+.status.placed {
+  background: #e0f2ff;
+  color: #007bff;
+}
+
+.status.paid {
+  background: #e7f9ed;
+  color: #28a745;
+}
+
+.status.shipped {
+  background: #fff3cd;
+  color: #ff9800;
+}
+
+.status.delivered {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Order details */
+.order-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Track button */
+.track-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #2874f0, #0b5ed7);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+.track-btn:hover {
+  background: linear-gradient(135deg, #0b5ed7, #084298);
+  transform: scale(1.03);
+}
+
+/* Empty state */
+.orders-page p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .orders-page {
+    padding: 25px;
+    grid-template-columns: 1fr;
+  }
+}
